@@ -1,0 +1,20 @@
+openapi: 3.0.1
+info:
+  title: Foo API
+  version: 1.0.0
+servers:
+  - url: 'https://api.togetter.com/v2'
+paths:
+  /foo:
+    get:
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: FooObject
+                type: object
+                properties:
+                  foo:
+                    type: string
